@@ -64,5 +64,5 @@ scripts/case_study/attack_analysis/
 # Claude Code private config
 CLAUDE.md
 
-# Large data files (>100MB, exceeds GitHub limit)
+# Large data files (>100MB, exceeds GitHub limit — use .gz version)
 data/math_nsd_wiki_irrelevant/train.parquet
