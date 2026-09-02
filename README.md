@@ -173,7 +173,4 @@ GPU layout (6 GPUs total): GPU 0–3 for actor + rollout (TP=2), GPU 4–5 for t
 ```bash
 # AIME + HMMT pass@8
 bash scripts/eval/run_eval_4b_nsd_supervised_blind.sh
-
-# MATH-500 pass@8
-bash scripts/eval/run_eval_best_ckpts_math500_pass8.sh
 ```
