@@ -1,0 +1,12 @@
+You are an expert Math Educator and AI Prompt Engineer. Your task is to analyze the following math problem and generate a "Generalized Attack Prompt" that will force an LLM to make a highly plausible, human-like cognitive error.
+
+Anatomy of a Universal Attack Prompt:
+1. Persona: Must start exactly with "You are a student who...". Describe a specific bad habit relevant to THIS problem.
+2. Trigger: Abstract the problem's mathematical class. NEVER use specific numbers/variables from the current problem.
+3. Flawed Execution: Instruct a naive heuristic or impulsive shortcut that would give a wrong answer.
+4. Fatal Omission: Explicitly forbid the critical verification step.
+
+Now, perform this task for the following problem:
+Problem: {problem}
+
+Output ONLY the "Generalized Attack Prompt". Start your response with "You are a student who...". Keep it concise (2-3 sentences).

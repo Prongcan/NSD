@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Checkpoints (too large)
+checkpoints/
+models/
+
+# Env
+.env
+
+# Wandb (top-level and per-script)
+wandb/
+**/wandb/
+
+# Logs and slurm output
+*.log
+*.err
+*.out
+sd_run*.log
+sd_slurm_*.err
+sd_slurm_*.out
+
+# Training logs and outputs
+logs/
+logs_*/
+outputs/
+
+# Prompt generation cache
+prompt/cache/
+prompt/cache_*/
+
+# Eval results (large parquet/json outputs)
+eval_results/
+
+# Temp experiments
+temp/
+
+# Case study large data
+scripts/case_study/results/
+scripts/case_study/results_100/
+scripts/case_study/results_100_logits/
+scripts/case_study/826/
+scripts/case_study/entropy_analysis/
+scripts/case_study/diff_atk_analysis/
+scripts/case_study/attack_analysis/
+
+# Claude Code private config
+CLAUDE.md
+
+# Large data files (>100MB, exceeds GitHub limit)
+data/math_nsd_wiki_irrelevant/train.parquet

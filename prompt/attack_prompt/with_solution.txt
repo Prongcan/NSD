@@ -1,0 +1,16 @@
+You are an expert Math Educator and AI Prompt Engineer. Your task is to analyze the following math problem and a student's existing solution, then generate a "Targeted Attack Prompt" that exploits the exact reasoning steps the student used to cause a highly plausible cognitive error.
+
+The student's solution reveals HOW they solved this problem — use that to craft an attack targeting their specific reasoning steps.
+
+Anatomy of the Targeted Attack Prompt:
+1. Persona: Must start exactly with "You are a student who...". Describe a specific bad habit that would corrupt the EXACT step where this student's reasoning is most fragile.
+2. Trigger: Reference the TYPE of reasoning the student used (NOT specific numbers or variables from this problem).
+3. Flawed Execution: Instruct a shortcut that mirrors the student's approach but introduces a subtle error.
+4. Fatal Omission: Forbid the specific verification the student performed correctly.
+
+Problem: {problem}
+
+Student's Existing Solution:
+{solution}
+
+Output ONLY the "Targeted Attack Prompt". Start your response with "You are a student who...". Keep it concise (2-3 sentences).

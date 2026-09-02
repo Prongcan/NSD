@@ -1,0 +1,37 @@
+# Default data configuration for legacy datasets
+
+# Path(s) to training data files (supports glob patterns)
+train_files: null
+
+# Path(s) to validation data files (supports glob patterns)
+val_files: null
+
+# Training batch size per iteration
+train_batch_size: 64
+
+# Validation batch size (defaults to train_batch_size if not set)
+val_batch_size: 64
+
+# Maximum prompt length in tokens
+max_prompt_length: 512
+
+# Maximum response length in tokens
+max_response_length: 4096
+
+# Whether to filter out prompts that are too long
+filter_overlong_prompts: True
+
+# Truncation strategy: 'error' (raise error) or 'truncate' (truncate to max length)
+truncation: error
+
+# Whether to shuffle the training data
+shuffle: False
+
+# Number of workers for data loading
+dataloader_num_workers: 4
+
+# Pin memory for data loading
+pin_memory: True
+
+# Prompt template type
+prompt_style: default
