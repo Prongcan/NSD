@@ -1,5 +1,7 @@
 # Negative Self-Distillation (NSD)
 
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Model%20Checkpoints-yellow)](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)
+
 ## Table of Contents
 
 - [Overview](#overview)
