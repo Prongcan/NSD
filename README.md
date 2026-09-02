@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Model Checkpoints](#model-checkpoints)
 - [Quick Start](#quick-start)
   - [Requirements](#requirements)
   - [Install](#install)
@@ -45,6 +46,14 @@ L = β · KL(student ∥ ref) + α · max(0, π_atk − π_ref) · unlikelihood(
 - *Supervised Distillation* — NSD loss backpropagated directly (forward KL + trust-region clip)
 
 The core NSD loss is implemented in `verl/verl/trainer/distillation/losses.py` (loss modes: `divergence_gated`, `divergence_gated_log`, `divergence_gated_sigmoid`).
+
+---
+
+## Model Checkpoints
+
+Trained NSD checkpoints are available on HuggingFace:
+
+**[PassionPrc/nsd-negative-self-distillation](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)**
 
 ---
 
