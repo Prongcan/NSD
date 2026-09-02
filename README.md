@@ -1,5 +1,21 @@
 # Negative Self-Distillation (NSD)
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Quick Start](#quick-start)
+  - [Requirements](#requirements)
+  - [Install](#install)
+  - [Key Versions](#key-versions)
+  - [Environment Variables](#environment-variables)
+- [Repository Structure](#repository-structure)
+- [Training](#training)
+  - [Step 1 — Generate Negative Conditions](#step-1--generate-negative-conditions)
+  - [Step 2 — Train](#step-2--train)
+  - [Step 3 — Evaluate](#step-3--evaluate)
+
+---
+
 ## Overview
 
 This is the official github repo of paper "Negative Self-Distillation: Learning to\\Reason by Avoiding Flaws".
