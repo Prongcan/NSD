@@ -9,14 +9,14 @@ This is the official github repo of paper "Negative Self-Distillation: Learning 
 
 NSD improves LLM math reasoning robustness by training the model to resist adversarial reasoning errors — **without requiring ground-truth labels**.
 
-The key idea: for each training problem, we generate a "negative condition" designed to steer the model toward a plausible but wrong reasoning path. We then run the model twice — once normally (reference) and once with the negative condition (attack teacher) — and train the student to suppress tokens where the attack teacher diverges from the reference.
+The key idea: for each training problem, we generate a "negative condition" designed to steer the model toward a wrong reasoning path. We then run the model twice — once normally (reference) and once with the negative condition (negative teacher) — and train the student to suppress tokens where the negative teacher diverges from the reference.
 
 **Loss:**
 ```
 L = β · KL(student ∥ ref) + α · max(0, π_atk − π_ref) · unlikelihood(π_student)
 ```
 - **KL term**: keeps the student anchored to the reference (prevents drift)
-- **Push term**: divergence-gated unlikelihood — only penalizes tokens that the attack teacher over-assigns relative to reference
+- **Push term**: divergence-gated unlikelihood — only penalizes tokens that the negative teacher over-assigns relative to reference
 
 **Negative conditioning variants supported:**
 - *Question-only (blind)* — LLM-generated negative condition, without seeing the solution
@@ -98,9 +98,8 @@ export WANDB_API_KEY=your_wandb_key
 ```
 negative-sd/
 ├── prompt/                              # Negative conditioning pipelines
-│   ├── main_every.py                    # Blind negative conditioning (per-problem, vLLM server)
+│   ├── main_every_4b_instruct.py        # Blind negative conditioning (per-problem, 4B instruct)
 │   ├── main_every_4b_sol_aware.py       # Sol-aware negative conditioning (4B generator)
-│   ├── main_wiki_irrelevant.py          # Wikipedia irrelevant context injection
 │   └── attack_prompt/                   # Raw negative condition templates
 ├── scripts/
 │   ├── 4B_NSD/                          # 4B NSD training scripts (main example)
@@ -144,11 +143,11 @@ export CUDA_VISIBLE_DEVICES=0,1
 vllm serve $CHECKPOINT_ROOT/hf_models/Qwen3-4B \
     --tensor-parallel-size 2 --port 8000
 
-# Blind negative conditions (one per problem)
-python prompt/main_every.py
+# Blind negative conditions (one per problem, 4B instruct)
+python prompt/main_every_4b_instruct.py
 
-# Wikipedia irrelevant context (no server needed)
-python prompt/main_wiki_irrelevant.py
+# Sol-aware negative conditions (conditioned on solution)
+python prompt/main_every_4b_sol_aware.py
 ```
 
 ### Step 2 — Train
