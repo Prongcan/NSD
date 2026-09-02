@@ -2,6 +2,11 @@
 
 ## Overview
 
+This is the official github repo of paper "Negative Self-Distillation: Learning to\\Reason by Avoiding Flaws".
+
+![Overview of NSD](figures/intro.png)
+*Overview of NSD*
+
 NSD improves LLM math reasoning robustness by training the model to resist adversarial reasoning errors — **without requiring ground-truth labels**.
 
 The key idea: for each training problem, we generate an "attack prompt" designed to steer the model toward a plausible but wrong reasoning path. We then run the model twice — once normally (reference) and once with the attack prompt (attack teacher) — and train the student to suppress tokens where the attack teacher diverges from the reference.
