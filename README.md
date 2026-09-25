@@ -1,5 +1,7 @@
 # Negative Self-Distillation (NSD)
 
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Model%20Checkpoints-yellow)](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -51,7 +53,9 @@ The core NSD loss is implemented in `verl/verl/trainer/distillation/losses.py` (
 
 ## Model Checkpoints
 
-Model checkpoints are omitted from this anonymous release and will be published after the review period.
+Trained NSD checkpoints are available on HuggingFace:
+
+**[PassionPrc/nsd-negative-self-distillation](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)**
 
 ---
 
