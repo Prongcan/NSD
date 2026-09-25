@@ -64,7 +64,11 @@ def normalize_answer(ans: str) -> str:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, required=True)
-    parser.add_argument("--data-path", type=str, default="/home/nvidia/peirongcan/negative-sd/data/aime/all.parquet")
+    parser.add_argument(
+        "--data-path",
+        type=str,
+        default=str(Path(__file__).resolve().parents[2] / "data" / "aime" / "all.parquet"),
+    )
     parser.add_argument("--year", type=int, required=True)
     parser.add_argument("--output-dir", type=str, required=True)
     parser.add_argument("--num-samples", type=int, default=12)

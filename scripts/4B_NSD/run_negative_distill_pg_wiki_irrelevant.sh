@@ -17,10 +17,7 @@ export TRANSFORMERS_NO_ADVISORY_WARNINGS=1
 
 # ---- wandb ----
 export WANDB_API_KEY="${WANDB_API_KEY}"  # set via: export WANDB_API_KEY=your_key
-export WANDB_ENTITY="personl"
 export WANDB_MODE=online
-export WANDB_RESUME=must
-export WANDB_RUN_ID=e4xtt2d5
 
 # ---- CUDA_VISIBLE_DEVICES ----
 export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5
