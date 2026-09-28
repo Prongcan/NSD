@@ -55,7 +55,7 @@ The core NSD loss is implemented in `verl/verl/trainer/distillation/losses.py` (
 
 Trained NSD checkpoints are available on HuggingFace:
 
-**[PassionPrc/nsd-negative-self-distillation](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)**
+**[Model checkpoints](https://huggingface.co/collections/PassionPrc/nsd-negative-self-distillation)**
 
 ---
 
