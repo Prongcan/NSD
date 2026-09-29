@@ -57,7 +57,7 @@ total_epochs=3
 save_freq=50
 test_freq=20
 
-project_name=meng_verl_nsd_math
+project_name=nsd_math
 experiment_name=qwen3_4b_nsd_full_math_every_prompt_sigmoid_push_full_instruct_4bgen_sol_aware
 default_local_dir=${CHECKPOINT_ROOT}/${project_name}/${experiment_name}
 # ---- end user-adjustable ----

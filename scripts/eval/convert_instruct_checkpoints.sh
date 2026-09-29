@@ -16,7 +16,7 @@ mkdir -p "$OUTPUT_BASE"
 BASE_MODEL="${CHECKPOINT_ROOT}/hf_models/Qwen3-4B-Instruct-2507"
 
 # FSDP checkpoints to convert
-FSDP_BASE="${CHECKPOINT_ROOT}/meng_verl_nsd_math/qwen3_4b_instruct_nsd_full_math_every_prompt_sigmoid"
+FSDP_BASE="${CHECKPOINT_ROOT}/nsd_math/qwen3_4b_instruct_nsd_full_math_every_prompt_sigmoid"
 
 STEPS=(40 80 120 160 200)
 

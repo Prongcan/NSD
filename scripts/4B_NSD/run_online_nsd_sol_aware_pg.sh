@@ -64,7 +64,7 @@ total_epochs=3
 save_freq=50
 test_freq=20
 
-project_name=meng_verl_nsd_math
+project_name=nsd_math
 experiment_name=qwen3_4b_online_nsd_full_math_sol_aware
 default_local_dir=${CHECKPOINT_ROOT}/${project_name}/${experiment_name}
 

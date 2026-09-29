@@ -15,7 +15,7 @@ export CUDA_HOME=~/miniconda3
 export PATH=$CUDA_HOME/bin:$PATH
 
 BASE_DIR="${PROJECT_ROOT}"
-FSDP_BASE="${CHECKPOINT_ROOT}/meng_verl_nsd_math/qwen3_4b_online_nsd_sol_aware_supervised"
+FSDP_BASE="${CHECKPOINT_ROOT}/nsd_math/qwen3_4b_online_nsd_sol_aware_supervised"
 HF_BASE="${CHECKPOINT_ROOT}/hf_models/4b_online_nsd_supervised_eval"
 BASE_MODEL="${CHECKPOINT_ROOT}/hf_models/Qwen3-4B"
 

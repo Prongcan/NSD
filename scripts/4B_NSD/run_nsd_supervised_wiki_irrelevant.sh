@@ -65,7 +65,7 @@ total_epochs=2
 save_freq=50
 test_freq=20
 
-project_name=meng_verl_nsd_math
+project_name=nsd_math
 experiment_name=qwen3_4b_nsd_supervised_wiki_irr_fwdkl
 default_local_dir=${CHECKPOINT_ROOT}/${project_name}/${experiment_name}
 # ---- end user-adjustable ----
